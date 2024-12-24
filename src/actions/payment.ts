@@ -13,6 +13,7 @@ export async function createOrder(amount: number) {
       amount: amount * 100, // Convert to smallest currency unit (paise)
       currency: 'INR',
       receipt: `receipt_${Date.now()}`,
+      
     })
 
     return { success: true, order }
